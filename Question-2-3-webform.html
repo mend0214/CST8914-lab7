@@ -34,15 +34,17 @@
            <!-- Added required attribute -->
         </div>
         <div class="control">
-          <label for="biography">Biography</label><textarea id="biography" name="biography" type="text" aria-describedby="bioDesc"></textarea>
+           <!-- Make biography required -->
+          <label for="biography">Biography</label><textarea id="biography" name="biography" type="text" aria-describedby="bioDesc" required></textarea>
           <span id="bioDesc">Include examples on your skills in JavaScript.</span>
           <!-- Added aria-describedby to add inline instruction for screen reader -->
         </div>
         <!-- Used fieldset and legend to group labels -->
           <fieldset>
-          <legend>Gender</legend>
+          <legend>Gender <span class="required">*</span></legend>
+           <!-- Make gender control required -->
           <div class="control">
-            <input id="gender_male" name="gender" type="radio" value="male" /><label for="gender_male">Male</label>
+            <input id="gender_male" name="gender" type="radio" value="male" required/><label for="gender_male">Male</label>
           </div>
           <div class="control">
             <input id="gender_female" name="gender" type="radio" value="female" /><label for="gender_female">Female</label>
